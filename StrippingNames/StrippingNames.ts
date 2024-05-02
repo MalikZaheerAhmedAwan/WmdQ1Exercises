@@ -1,4 +1,11 @@
-let personName="        \n \t \t \t \n \t \t             Malik Zaheer           \n \t \n \t \n "; 
-console.log("Befor Striping :"+personName);
+let personName="        \n \t \t \t \n \t \t             Malik \n \n \t \n \t Zaheer           \n \t \n \t \n Ahmed  \n \t \n \t \n Awan  \n \t \n \t \n "; 
+console.log("***** Original String *****"); 
+console.log(personName);
 let trimName =personName.trim();   
-console.log("After Striping :"+trimName);
+console.log("***** After Apply Trim Function String *****");
+console.log(trimName);
+let strippingName =trimName.replace(/\n/g,"");
+strippingName =strippingName.replace(/\t/g,""); 
+strippingName =strippingName.replace(/\s/g,"");   
+console.log("***** After Apply Replace Function String *****");
+console.log(strippingName);
